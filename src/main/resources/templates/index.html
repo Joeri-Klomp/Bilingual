@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{welkom}"></title>
+</head>
+<body>
+<h1 th:text="#{welkom}"></h1>
+<p th:text="#{dagVanHetJaar(${volgnummer})}"></p>
+<!--Bij het oproepen van de tekst geef je waarden mee voor de parameters. Je geeft als waarde het getal die de controller
+meegaf onder de naam volgnummer.-->
+
+<ul>
+    <li><a th:href="@{/(locale=nl_BE)}">Nederlands</a></li>
+    <li><a th:href="@{/(locale=en_US)}">English</a></li>
+</ul>
+</body>
+</html>
